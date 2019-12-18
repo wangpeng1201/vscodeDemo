@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>如颖随形</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/css.css">
+    <link rel="stylesheet" href="css/lb.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/page.js"></script>
+    <script type="text/javascript" src="js/ZoomPic.js"></script>
+    <script src="js/lb.js"></script>
+</head>
+
+<body>
+    <div id="daohang">
+        <ul class="daohang">
+            <li><a href="#gerenjianjie ">个人简介</a></li>
+            <li><a href="# ">丽颖成长史</a></li>
+            <li><a href="# ">丽颖代表作</a></li>
+            <li><a href="# ">丽颖找到幸福</a></li>
+            <li><a href="# ">颖宝图片集</a></li>
+        </ul>
+    </div>
+    <div class="lb-box" id="lb-1">
+        <!-- 轮播内容 -->
+        <div class="lb-content">
+            <div class="lb-item active">
+                <a href="#">
+                    <img src="images/t1.png" alt="picture loss">
+                    <span>Description 1</span>
+                </a>
+            </div>
+            <div class="lb-item">
+                <a href="#">
+                    <img src="images/t2.png" alt="picture loss">
+                    <span>Description 2</span>
+                </a>
+            </div>
+            <div class="lb-item">
+                <a href="#">
+                    <img src="images/t3.png" alt="picture loss">
+                    <span>Description 3</span>
+                </a>
+            </div>
+            <div class="lb-item">
+                <a href="#">
+                    <img src="images/t4.png" alt="picture loss">
+                    <span>Description 4</span>
+                </a>
+            </div>
+        </div>
+        <!-- 轮播标志 -->
+        <ol class="lb-sign">
+            <li class="active">1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+        </ol>
+        <!-- 轮播控件 -->
+        <div class="lb-ctrl left">＜</div>
+        <div class="lb-ctrl right">＞</div>
+    </div>
+    <div>
+        <span></span>
+    </div>
+    <script>
+        window.onload = function() {
+            // 轮播选项
+            const options = {
+                id: 'lb-1', // 轮播盒ID
+                speed: 600, // 轮播速度(ms)
+                delay: 3000, // 轮播延迟(ms)
+                direction: 'left', // 图片滑动方向
+                moniterKeyEvent: true, // 是否监听键盘事件
+                moniterTouchEvent: true // 是否监听屏幕滑动事件
+            }
+            const lb = new Lb(options);
+            lb.start();
+        }
+    </script>
+
+</body>
+
+</html>
